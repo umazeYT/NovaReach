@@ -1,0 +1,476 @@
+body
+{
+    background-color: #d1d1d1;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+header
+{
+    max-width: 980px;
+    padding: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #275399;
+    text-align: center;
+    color: #997f27;
+}
+
+h1
+{
+    font-size: 42px;
+    font-weight: 800;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+ul > li
+{
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+ul > li > a
+{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all ease 0.2s;
+}
+
+ul > li > a:hover
+{
+    color: #997f27;
+}
+
+.cta-button
+{
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.cta-button > a
+{
+    text-decoration: none;
+    color: #ffffff;
+    border: 3px solid #FFC107;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 18px;
+    transition: all ease 0.2s;
+}
+
+.cta-button > a:hover
+{
+    color: #FFC107;
+}
+
+#hero
+{
+    max-width: 980px;
+    padding: 10px;
+    width: 100%;
+    background-color: #c0c0c0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#hero h2
+{
+    font-size: 25px;
+    color: #444b5f;
+}
+
+#hero p
+{
+    font-size: 18px;
+    color: #172F55;
+}
+
+#about
+{
+    width: 100%;
+    max-width: 980px;
+    padding: 10px;
+    background-color: #c0c0c0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about h2
+{
+    font-size: 28px;
+    color: #444b5f;
+}
+
+#about p
+{
+    font-size: 22px;
+    color: #172F55;
+}
+
+ol
+{
+    list-style-type: none;
+}
+
+ol li
+{
+    font-size: 20px;
+    color: #997f27;
+}
+
+#services
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 980px;
+    padding: 10px;
+    background-color: #c0c0c0;
+}
+
+#services h2
+{
+    font-size: 28px;
+    text-align: center;
+    color: #444b5f;
+}
+
+.kafelki-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 20px;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.kafelki-grid h3
+{
+    text-transform: uppercase;
+}
+
+.kafelek 
+{
+  background-color: #16243a;
+  color: #5583cc;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.kafelek:hover
+{
+    transform: translateY(-6px);
+}
+
+.kafelek p
+{
+    color: #997f27;
+    text-align: center;
+}
+
+.team
+{
+    max-width: 980px;
+    padding: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c0c0c0;
+    text-align: center;
+}
+
+.team h2
+{
+    font-size: 28px;
+    color: #444b5f;
+}
+
+.team h3
+{
+    font-size: 24px;
+    color: #444b5f;
+}
+
+.team p
+{
+    font-size: 22px;
+    color: #172F55;
+}
+
+.membersimg
+{
+    height: 50%;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border: 5px solid #5583cc;
+    max-width: 400px;
+}
+
+#contact
+{
+    max-width: 980px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #275399;
+    text-align: center;
+    color: #ccc;
+}
+
+.form-contact 
+{
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.form-contact h2 
+{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-contact label 
+{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-contact input,
+.form-contact textarea 
+{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-contact textarea
+{
+    margin-top: 15px;
+    resize: none;
+}
+
+.form-contact input:focus,
+.form-contact textarea:focus 
+{
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+.form-contact button 
+{
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-contact button:hover 
+{
+  background-color: #0056b3;
+}
+
+footer
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 980px;
+    padding: 10px;
+    text-align: center;
+    background-color: #16243a;
+    color: #ccc;
+}
+
+@media (max-width: 768px) 
+{
+  .portfolio-wrapper 
+  {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) 
+{
+  h1 
+  {
+    font-size: 22px;
+  }
+  p 
+  {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) 
+{
+  nav ul 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li 
+  {
+    display: block;
+    padding: 10px 0;
+  }
+}
+
+#team 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (max-width: 768px) 
+{
+  .members 
+  {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .membersimg 
+  {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) 
+{
+  h2 
+  {
+    font-size: 20px;
+  }
+
+  .kafelek 
+  {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .cta-button a 
+  {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 768px) 
+{
+  body 
+  {
+    padding: 0 12px;
+  }
+
+  section 
+  {
+    padding: 12px 0;
+  }
+}
+
+.members 
+{
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+}
+
+@media (max-width: 768px) 
+{
+  .kafelek 
+  {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .kafelki-grid 
+  {
+    padding: 0 12px; /* zapobiega przyleganiu do krawędzi ekranu */
+  }
+}
+
+@media (max-width: 768px) 
+{
+  .kafelki-grid 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* <<< wyśrodkowanie */
+    padding: 0 12px;
+    gap: 16px;
+  }
+
+  .kafelek 
+  {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+#about ol  
+{
+  text-align: center;
+  padding: 0;
+  margin: 16px auto;
+}
